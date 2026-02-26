@@ -1,27 +1,23 @@
-let currentIndex = 0;
+function showTime() {
+	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+}
+showTime();
+setInterval(function () {
+	showTime();
+}, 1000);
 
-function showNextImage() {
-    const images = document.querySelectorAll('.carousel-image');
-    if (currentIndex < images.length - 1) {
-        currentIndex++;
-    } else {
-        currentIndex = 0;
-    }
-    updateCarousel();
+function openOverlay() {
+    document.getElementById('overlay').classList.add('active');
 }
 
-function showPrevImage() {
-    const images = document.querySelectorAll('.carousel-image');
-    if (currentIndex > 0) {
-        currentIndex--;
-    } else {
-        currentIndex = images.length - 1;
-    }
-    updateCarousel();
+function closeOverlay() {
+    document.getElementById('overlay').classList.remove('active');
 }
 
-function updateCarousel() {
-    const carouselImages = document.querySelector('.carousel-images');
-    const width = carouselImages.clientWidth;
-    carouselImages.style.transform = `translateX(-${currentIndex * width}px)`;
+function openOverlay2() {
+    document.getElementById('overlay').classList.add('active');
+}
+
+function closeOverlay2() {
+    document.getElementById('overlay').classList.remove('active');
 }
