@@ -62,3 +62,18 @@ function closeOverlay7() {
     document.getElementById('overlay7').classList.remove('active');
 }
 
+function openOverlay8() {
+    document.getElementById('overlay8').classList.add('active');
+}
+
+function closeOverlay8() {
+    document.getElementById('overlay8').classList.remove('active');
+}
+
+function openOverlay9() {
+    document.getElementById('overlay9').classList.add('active');
+}
+
+function closeOverlay9() {
+    document.getElementById('overlay9').classList.remove('active');
+}
