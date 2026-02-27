@@ -546,4 +546,97 @@ button:hover {
     opacity: 1;
 }
 
+/* Overlay6 */
+
+#overlay6 {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+#overlay6.active {
+    background-color: rgba(0,0,0,0.75);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay6-content {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 8px;
+    position: relative;
+    color: #000;
+    font-size: 14px;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+#overlay6.active .overlay6-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Overlay7 */
+
+#overlay7 {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+#overlay7.active {
+    background-color: rgba(0,0,0,0.75);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay7-content {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 8px;
+    position: relative;
+    color: #000;
+    font-size: 14px;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+#overlay7.active .overlay7-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.ov-limite{
+    overflow: auto;
+    max-height: 500px;
+}
+
 

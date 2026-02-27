@@ -45,3 +45,20 @@ function openOverlay5() {
 function closeOverlay5() {
     document.getElementById('overlay5').classList.remove('active');
 }
+
+function openOverlay6() {
+    document.getElementById('overlay6').classList.add('active');
+}
+
+function closeOverlay6() {
+    document.getElementById('overlay6').classList.remove('active');
+}
+
+function openOverlay7() {
+    document.getElementById('overlay7').classList.add('active');
+}
+
+function closeOverlay7() {
+    document.getElementById('overlay7').classList.remove('active');
+}
+
